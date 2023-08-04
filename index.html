@@ -27,19 +27,19 @@
 </head>
 <body>
   <!-- Header -->
-  <header>
-    <div>
-      <img src="imgs/c-favicon.ico" alt="logo" />
-      <h1><a href="#">Seohyun</a></h1>
+  <header class="header">
+    <div class="header__logo">
+      <img class="header__logo__img" src="imgs/c-favicon.ico" alt="logo" />
+      <h1 class="header__logo__title"><a href="#">Seohyun</a></h1>
     </div>
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#work">My work</a></li>
-        <li><a href="#testmonial">Testmonials</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="header__menu">
+        <li><a class="header__menu__item active" href="#home">Home</a></li>
+        <li><a class="header__menu__item" href="#about">About</a></li>
+        <li><a class="header__menu__item" href="#skills">Skills</a></li>
+        <li><a class="header__menu__item" href="#work">My work</a></li>
+        <li><a class="header__menu__item" href="#testmonial">Testmonials</a></li>
+        <li><a class="header__menu__item" href="#contact">Contact</a></li>
       </ul>
     </nav>   
   </header>
@@ -47,10 +47,13 @@
   <main>
     <!-- Home -->
     <section id="home">
-      <img src="imgs/sh-porfile-removebg.png" alt="Seohyun's profiles">
-      <h2>Hello I&#39;m Front-End Developer, Seohyun</h2>
-      <p>풀스텍 개발을 꿈꾸는 개발자</p>
-      <a href="#contact">Contact Me</a>
+      <img class="home__avatar" src="imgs/sh-porfile-removebg.png" alt="Seohyun's profiles">
+      <h2 class="home__title">
+        Hello <br /> I&#39;m 
+        <strong class="home__title__strong">Front-End Developer</strong>,Seohyun
+      </h2>
+      <p class="home__description">풀스텍 개발을 꿈꾸는 개발자</p>
+      <a class="home__contact" href="#contact">Contact Me</a>
     </section>
     <!-- About -->
     <section id="about">
