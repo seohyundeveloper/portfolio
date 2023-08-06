@@ -253,7 +253,7 @@ button:focus {
 .skills__etc {
   padding: 1rem;
   background-color: var(--color-primary);
-  filter:brightness(150%); /*같은색의 밝기 조절로 다른색으로 처리 */
+  filter:brightness(150%); 
 }
 
 .bar {
@@ -326,4 +326,89 @@ button:focus {
 .category:hover .category__count {
   opacity: 1;
   top: 0;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.project {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project__img {
+  width: 100%;
+}
+
+.project__metadata {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-black);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms ease-in;
+  transform: translateY(-10px);
+}
+
+.project__metadata:hover {
+  opacity: 0.8;
+  transform: translateY(0px);
+}
+
+.project__title:after {
+  content: '';
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0.5rem 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-accent);
+}
+
+/* Testimonial */
+.testimonials {
+  margin: 3rem;
+}
+
+.testmonial {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testmonial:nth-child(even) .testimonial__img {
+  order:1;
+}
+
+.testimonial__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.testimonial__bubble {
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.testimonial__bubble__name {
+  color: var(--color-accent);
+  font-weight: bold;
+  filter: brightness(70%);
 }
