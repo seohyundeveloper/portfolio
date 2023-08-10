@@ -226,6 +226,14 @@ button:focus {
   font-size: 0.8rem;
 }
 
+.fashion {
+  width: 45px;
+  height: 35px;
+  font-size: 2rem;
+  text-align: center;
+  color: grey;
+}
+
 .job__image{
   width: 45px;
   height: 35px;
