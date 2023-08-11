@@ -170,13 +170,14 @@ button:focus {
   height: 250px;
   object-fit: cover;
   border-radius: 100%;
-  border: 3px solid var(--color-accent);
+  border: 2px solid var(--color-accent);
 }
 
 .home__title {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
+
 .home__title__strong {
   color: var(--color-accent);
 }
