@@ -41,3 +41,37 @@ navbarToggle.addEventListener('click', () => {
 navbarMenu.addEventListener('click', () => {
   navbarMenu.classList.remove('open');
 });
+
+function sendMassage() {
+  validateCheck(contact);
+ 
+
+  contact.method = "POST";
+  contact.action = "./shop/mailto.php";
+  contact.submit();
+  
+}
+
+function validateCheck() {
+  console.log(contact)
+  if(contact.pernm.value==""){
+    alert("담당자 성함을 입력해주세요.");
+    contact.pernm.focus();
+    return false;
+  }
+  if(contact.pertel.value==""){
+    alert("연락받으실 연락처를 입력해주세요.");
+    contact.pertel.focus();
+    return false;
+  }
+  if(contact.peremail.value==""){
+      alert("연락받으실 이메일을 입력해주세요.");
+      contact.peremail.focus();
+      return false;
+  }
+  if(contact.pertext.value==""){
+      alert("문의하실 내용을 입력해주세요.");
+      contact.pertext.focus();
+      return false;
+  }
+}

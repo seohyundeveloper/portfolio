@@ -22,12 +22,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <!-- Font Awsome -->
   <script src="https://kit.fontawesome.com/54c548ca53.js" crossorigin="anonymous"></script>
+  <!-- Typeit -->
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Javascript -->
   <script type="module" src="src/main.js" defer></script>
   <script type="module" src="src/projects.js" defer></script>
   <script type="module" src="src/active_menu.js" defer></script>
+  <script type="module" src="src/type.js" defer></script>
 </head>
 <body>
   <!-- Header -->
@@ -56,9 +59,9 @@
     <section id="home">
      <div class="home__container">
       <img class="home__avatar" src="imgs/sh-porfile-removebg.png" alt="Seohyun's profiles">
-      <h2 class="home__title">
+      <h2 class="home__title" aria-label="Hello, I'm dream developer, Seohyun.">
         Hello <br /> I&#39;m 
-        <strong class="home__title__strong">Front-End Developer</strong>,Seohyun
+        <strong class="home__title__strong">Dream Developer</strong>,Seohyun
       </h2>
       <p class="home__description">UI/UX를 지향하고 호기심 많은 개발자</p>
       <a class="home__contact" href="#contact">Contact Me</a>
@@ -77,13 +80,15 @@
           <p>HTML, CSS, Javascript, Typescript, Angular</p>
         </li>
         <li class="major">
-          <i class="fa-brands fa-css3 major__icon"></i>
-          <p class="major__title">Back-end</p>
+          <i class="fa-solid fa-laptop major__icon"></i>
+          <!-- <i class="fa-brands fa-css3 major__icon"></i> -->
+          <p class="major__title">Web</p>
           <p>HTML, CSS, Javascript, Typescript, Angular</p>
         </li>
         <li class="major">
-          <i class="fa-brands fa-js major__icon"></i>
-          <p class="major__title">Front-end</p>
+          <i class="fa-solid fa-mobile-screen-button major__icon"></i>
+          <!-- <i class="fa-brands fa-js major__icon"></i> -->
+          <p class="major__title">Mobile</p>
           <p>HTML, CSS, Javascript, Typescript, Angular</p>
         </li>
       </ul>
